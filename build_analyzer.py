@@ -56,7 +56,7 @@ def run_command(cmd):
 for cpp_file in cpp_files:
 
     #g++
-    command = "g++ "
+    command = "g++ -std=c++11 "
 
     #include paths
     for path in include_paths: 
@@ -78,7 +78,7 @@ for cpp_file in cpp_files:
     
 #lastly, link
 #g++
-command = "g++ "
+command = "g++ -std=c++11 "
 
 #add the library search paths
 for link_path in link_paths:
